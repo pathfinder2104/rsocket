@@ -7,7 +7,7 @@
         <r2dbc-releasetrain.version>Arabba-M8</r2dbc-releasetrain.version>
     </properties>
     <packaging>pom</packaging>
-    <artifactId>data</artifactId>
+    <artifactId>rsocket</artifactId>
     <parent>
         <groupId>rsb</groupId>
         <artifactId>parent</artifactId>
@@ -15,23 +15,8 @@
         <relativePath/>
     </parent>
     <modules>
-        <module>r2dbc</module>
-        <module>mongodb</module>
-    </modules>
-    <!-- tag::r2dbc-bom[] -->
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.springframework.boot.experimental</groupId>
-                <artifactId>spring-boot-dependencies-r2dbc</artifactId>
-                <version>0.1.0.BUILD-SNAPSHOT</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
-    <!-- end::r2dbc-bom[] -->
-
+        <module>raw-rsocket</module>
+    </modules> 
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
